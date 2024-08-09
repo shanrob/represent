@@ -9,7 +9,7 @@ const Task = (props) => {
   const inputRef = React.useRef(null);
 
   // This function will be called when the edit button is clicked
-  const handleEdit = () => {
+  const editTask = () => {
     setEditing(true);
   };
 
@@ -57,6 +57,7 @@ const Task = (props) => {
   // If the task is being edited, it will return an input field instead of the task description
   return (
     <div className="task">
+      <input className="done-box" type="checkbox"></input>
       {editing ? (
         <form onSubmit={handleInputSubmit}>
           <input
@@ -71,8 +72,10 @@ const Task = (props) => {
       ) : (
         <p>{props.details.description}</p>
       )}
-      <button onClick={handleEdit}>Edit</button>
-      <button onClick={deleteTask}>Delete</button>
+      <div className="task-buttons">
+        <button onClick={editTask}>Edit</button>
+        <button onClick={deleteTask}>Delete</button>
+      </div>
     </div>
   );
 };

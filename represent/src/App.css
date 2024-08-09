@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  background-color: #ffffff;
 }
 
 .App-logo {
@@ -14,30 +20,59 @@
 }
 
 .App-header {
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
 }
 
-.find-address {
+.to-do-list {
   display: flex;
+  width: 70%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: navy
+  font-size: calc(8px + 2vmin);
 }
 
-.address-inputs {
-    display: flex;
-    flex-direction: row;
-    min-width: 12%;
-    align-items: center;
-    min-width: 12%;
-    justify-content: space-between;
-    font-size: calc(10px + 2vmin);
-    color: black
- }
+.task {
+  display: flex;
+  background: rgb(174, 187, 228);
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30%;
+  align-items: center;
+  font-size: calc(4px + 2vmin);
+  height: 65px;
+  border-radius: 10px;
+  margin: 5px 0px;;
+  gap: 10px;
+  box-shadow: 3px 6px 6px rgb(186, 186, 187);
+}
+
+.task-buttons {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.task-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  height: 65px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.description-input {
+  width: 70%;
+  height: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
