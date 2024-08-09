@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.find-address {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  min-width: 12%;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: rgb(40, 40, 40);
+}
